@@ -10,7 +10,7 @@ export default function RootLayout({ children, params }) {
   const router = useRouter();
   const pathname = usePathname();
   const [messages, setMessages] = useState(null);
-  const [locale, setLocale] = useState(params?.locale || "en");
+  const [locale, setLocale] = useState(params?.locale || "cz");
 
   // Fallback messages in case JSON files fail to load
   const fallbackMessages = {
@@ -58,8 +58,8 @@ export default function RootLayout({ children, params }) {
 
   // Sync locale with pathname
   useEffect(() => {
-    const currentLocale = pathname.split("/")[1] || "en";
-    if (currentLocale !== locale && ["en", "fr"].includes(currentLocale)) {
+    const currentLocale = pathname.split("/")[1] || "cz";
+    if (currentLocale !== locale && ["ua", "cz","ru"].includes(currentLocale)) {
       console.log("Setting locale to:", currentLocale);
       setLocale(currentLocale);
     }
@@ -77,10 +77,10 @@ export default function RootLayout({ children, params }) {
         console.log("Loaded messages:", loadedMessages);
       } catch (error) {
         console.error(`Failed to load translations for ${locale}:`, error);
-        setMessages(fallbackMessages[locale] || fallbackMessages.en);
+        setMessages(fallbackMessages[locale] || fallbackMessages.cz);
         console.log(
           "Using fallback messages:",
-          fallbackMessages[locale] || fallbackMessages.en
+          fallbackMessages[locale] || fallbackMessages.cz
         );
       }
     }

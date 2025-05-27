@@ -7,7 +7,7 @@ export default function RootPage() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/en");
+    router.replace("/cz");
   }, [router]);
 
   return null; 
