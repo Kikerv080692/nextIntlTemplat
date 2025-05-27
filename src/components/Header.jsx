@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function Header({ locale, onLocaleChange }) {
-  const t = useTranslations("header");
+  const t = useTranslations("translation.header");
 
   return (
     <header className="header">

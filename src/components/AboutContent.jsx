@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 
 export default function AboutContent() {
-  const t = useTranslations("about");
+  const t = useTranslations("translation.about");
 
   return (
     <div>

@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 
 export default function ContactContent() {
-  const t = useTranslations("contact");
+  const t = useTranslations("translation.contact");
 
   return (
     <div>
