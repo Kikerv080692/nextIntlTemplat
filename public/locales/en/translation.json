@@ -1,0 +1,17 @@
+{
+  "welcome": "Welcome to my app",
+  "greeting": "Hello, {name}!",
+  "about": {
+    "title": "About Us",
+    "description": "We are a team dedicated to building awesome web applications."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us for any inquiries."
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  }
+}
