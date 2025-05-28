@@ -1,3 +1,3 @@
-export default function LocaleLayout({ children, params }) {
+export default function LocaleLayout({ children }) {
   return children;
 }

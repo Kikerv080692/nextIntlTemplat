@@ -7,6 +7,8 @@ export default function Footer() {
     const t = useTranslations("translation")
 
     return (
+        <SC.MainWrapper>
+
         <SC.WrapperFooter>
             <SC.InfoSection>
                 <img src="/images/footer/clock.png" alt="clock" />
@@ -15,25 +17,26 @@ export default function Footer() {
                     <p>{t("footer.days")} <span>8:00 - 20:00</span></p>
                 </div>
             </SC.InfoSection>
-
             <SC.ContactSection>
                 <address>
-                    <p>
+                    <div>
                         <img src="/images/footer/mail.png" alt="mail" />
                         <a href="mailto:valihursky@gmail.com">valihursky@gmail.com</a>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <img src="/images/footer/telephone.png" alt="phone" />
                         <a href="tel:+420773612198">+420 773 612 198</a>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <img src="/images/footer/location.png" alt="location" />
                         <a href="https://www.google.com/maps?q=49.1713935,16.6466475"   target="_blank"  rel="noopener noreferrer">
-                            Vinohradská 1305/82a, 618 00 Brno-Černovice
+                            Vinohradská 1305/82a, <br />    618 00 Brno-Černovice 
                         </a>
-                    </p>
+                    </div>
                 </address>
             </SC.ContactSection>
         </SC.WrapperFooter>
+        </SC.MainWrapper>
+        
     );
 }

@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const WrapperSwiper = styled.div`
 width: 100%;
-max-width: 100%;
 margin: 0 auto;
-padding: 20px 10px;
 background: orange;
 margin-bottom: 30px;
 

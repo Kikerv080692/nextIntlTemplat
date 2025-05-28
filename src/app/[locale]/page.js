@@ -1,21 +1,21 @@
 "use client";
+import AllPage from "@/components/AllPage/AllPage";
 import Brands from "@/components/Brands/Brands";
+import { MainWrapper } from "@/components/Footer/Footer.styled";
 import ServiceList from "@/components/ServiceList/ServiceList";
 import { useTranslations } from "next-intl";
 import styled from "styled-components";
 
 export default function Home() {
   const t = useTranslations("translation.title");
-  const highlight1 = t('highlight1');
-    const middle = t('middle');
-    const highlight2 = t('highlight2');
+ 
 
    return (
-        <>
+       
             <Wrapper>
                 <div>
                     <Title>
-                        <span className="gradient">{highlight1}</span> <span className='middle'>{middle}</span> <span className="gradient">{highlight2}</span>
+                        <span className="gradient">{t('highlight1')}</span> 
                     </Title>
                     <SubTitle>{t('tittle2')}</SubTitle>
                 </div>
@@ -24,10 +24,12 @@ export default function Home() {
                 </WrapperImage>
                 {/* <ServiceList/> */}
                 <Brands/>
+                <AllPage/>
             </Wrapper>
-        </>
+        
     )
 }
+
 export const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
@@ -35,12 +37,10 @@ align-items: center;
 text-align: center; 
 background: #131619;
 width: 100%;
-
 `
 export const Title = styled.h1`
   text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 24px;
   word-break: break-word;
   margin-bottom: 10px;
 
@@ -60,21 +60,7 @@ export const Title = styled.h1`
     animation: shine 2.5s linear infinite;
   }
 
-  .middle {
-    background: linear-gradient(
-      90deg,
-      #04ff00,
-      #007700,
-      #04ff00
-    );
-    background-size: 200%;
-    background-position: 0%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    animation: shine 3.5s linear infinite;
-  }
+
 
   @media (min-width: 768px){
     font-size: 30px;
@@ -121,7 +107,7 @@ export const WrapperImage = styled.div`
 margin: 5px 5px;
 `
 export const Image = styled.img`
-  max-width: 300px;
+  width: 300px;
   border-radius: 16px;
 
   @media (min-width: 768px) {

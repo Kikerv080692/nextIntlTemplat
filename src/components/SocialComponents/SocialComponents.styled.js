@@ -17,8 +17,6 @@ const BaseIconWrapper = styled.a`
 
 export const IconWrapperViber = styled(BaseIconWrapper)`
   background-color: #7360F2;
-
-
 `;
 
 export const IconWrapperWhatsapp = styled(BaseIconWrapper)`

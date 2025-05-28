@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
-export const WrapperFooter = styled.footer`
+
+export const MainWrapper = styled.footer`
+max-width: 100%;
+`
+export const WrapperFooter = styled.div`
   background-color: #222;
   color: #fff;
-  padding: 40px 100px;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 100vw;
+  width: 100%;
   border-top: 2px solid #C4C4C4;
+  padding-left: 120px;
   img {
     width: 24px;
     margin-right: 10px;

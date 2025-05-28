@@ -12,17 +12,17 @@ import Link from "next/link";
 export default function Header({ locale, onLocaleChange }) {
   const t = useTranslations("translation.header");
   const [isMobile, setIsMobile] = useState(false)
- useEffect(() => {
-        
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
+  useEffect(() => {
 
-        handleResize();
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <HeaderWrapper>
@@ -40,16 +40,17 @@ export default function Header({ locale, onLocaleChange }) {
         <Link href={`/${locale}/about`}>{t("service")}</Link>
       </Nav>}
 
-
-      <SocialComponents />
+      <SocialWrapper>
+        <SocialComponents />
+      </SocialWrapper>
 
       <LangSelect onChange={onLocaleChange} value={locale}>
         <option value="ua">UA</option>
         <option value="ru">Ru</option>
         <option value="cz">Cz</option>
       </LangSelect>
-      {isMobile &&  <BurgerButton locale={locale}/>}
-     
+      {isMobile && <BurgerButton locale={locale} />}
+
     </HeaderWrapper>
   );
 }
@@ -68,20 +69,23 @@ box-sizing: border-box;
   justify-content: space-between;
   z-index: 999;
   border-bottom: 1px solid #C4C4C4;
- 
 `;
-
+export const SocialWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+`;
 const LogoWrapper = styled.div`
- max-width: 100%;
+ /* max-width: 100%; */
   height: auto;
   margin-left: 10px;
 `;
 
 
 const Nav = styled.nav`
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 20px; */
 
   a {
     color: white;
@@ -97,7 +101,7 @@ const Nav = styled.nav`
 const LangSelect = styled.select`
   padding: 6px;
   border-radius: 6px;
-  margin-right: 15px;
+  margin-right: 10px;
   @media (min-width: 768px) {
   }
 `;

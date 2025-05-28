@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
 position: relative;
-margin-right: 10px;
+margin-right: 15px;
 `
 
 export const IconButton = styled.button`
@@ -11,7 +11,6 @@ export const IconButton = styled.button`
   padding: 0;
   margin: 0;
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
