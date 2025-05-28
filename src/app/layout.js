@@ -119,7 +119,7 @@ export default function RootLayout({ children, params }) {
           timeZone="UTC"
         >
           <Header locale={locale} onLocaleChange={handleLocaleChange} />
-          <main className="container">{children}</main>
+          <main>{children}</main>
         </NextIntlClientProvider>
       </body>
     </html>

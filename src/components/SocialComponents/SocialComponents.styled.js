@@ -9,7 +9,6 @@ const BaseIconWrapper = styled.a`
   border-radius: 16%;
   color: white;
   text-decoration: none;
-  margin: 5px;
   transition: all 0.3 ease, background-color 0.3s ease; ;
   &:hover {
     transform: scale(1.2);

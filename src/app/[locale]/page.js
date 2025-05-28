@@ -8,9 +8,8 @@ display: flex;
 flex-direction: column;
 align-items: center;     
 text-align: center; 
-padding: 20px;
 background: #131619;
-color: white;
+width: 100%;
 
 
 @media (min-width: 768px) {
@@ -21,7 +20,7 @@ color: white;
 `
 export const Title = styled.h1`
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   word-break: break-word;
   margin-bottom: 10px;
@@ -98,25 +97,25 @@ background: linear-gradient(to top,rgb(255, 153, 0),rgb(57, 167, 2));
 
 
 @media (min-width: 768px){
-  font-size: 20px;
+  font-size: 24px;
 }
 `
 
 export const WrapperImage = styled.div`
-margin: 20px 20px;
+margin: 5px 5px;
 
 `
 export const Image = styled.img`
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 16px;
-  padding: 10px;
+  /* padding: 10px; */
 
   @media (min-width: 768px) {
     max-width: 800px; 
   }
 
   @media (min-width: 1024px) {
-    max-width: 1000px; 
+    max-width: 900px; 
   }
 
 `;
