@@ -5,6 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import "./globals.css";
+import Footer from "@/components/Footer/Footer";
 
 export default function RootLayout({ children, params }) {
   const router = useRouter();
@@ -120,6 +121,7 @@ export default function RootLayout({ children, params }) {
         >
           <Header locale={locale} onLocaleChange={handleLocaleChange} />
           <main>{children}</main>
+          <Footer/>
         </NextIntlClientProvider>
       </body>
     </html>

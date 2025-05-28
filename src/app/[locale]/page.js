@@ -1,8 +1,33 @@
 "use client";
-
+import Brands from "@/components/Brands/Brands";
+import ServiceList from "@/components/ServiceList/ServiceList";
 import { useTranslations } from "next-intl";
 import styled from "styled-components";
 
+export default function Home() {
+  const t = useTranslations("translation.title");
+  const highlight1 = t('highlight1');
+    const middle = t('middle');
+    const highlight2 = t('highlight2');
+
+   return (
+        <>
+            <Wrapper>
+                <div>
+                    <Title>
+                        <span className="gradient">{highlight1}</span> <span className='middle'>{middle}</span> <span className="gradient">{highlight2}</span>
+                    </Title>
+                    <SubTitle>{t('tittle2')}</SubTitle>
+                </div>
+                <WrapperImage>
+                    <Image src="/images/Garage.webp" alt="Garage" />
+                </WrapperImage>
+                {/* <ServiceList/> */}
+                <Brands/>
+            </Wrapper>
+        </>
+    )
+}
 export const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
@@ -11,12 +36,6 @@ text-align: center;
 background: #131619;
 width: 100%;
 
-
-@media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
 `
 export const Title = styled.h1`
   text-transform: uppercase;
@@ -84,7 +103,6 @@ export const Title = styled.h1`
   animation: fadeInUp 0.6s ease;
 `;
 
-
 export const SubTitle = styled.h2`
 font-size: 18px;
 word-break: break-word;
@@ -95,20 +113,16 @@ background: linear-gradient(to top,rgb(255, 153, 0),rgb(57, 167, 2));
     -webkit-text-fill-color: transparent;
     display: inline-block; 
 
-
 @media (min-width: 768px){
   font-size: 24px;
 }
 `
-
 export const WrapperImage = styled.div`
 margin: 5px 5px;
-
 `
 export const Image = styled.img`
   max-width: 300px;
   border-radius: 16px;
-  /* padding: 10px; */
 
   @media (min-width: 768px) {
     max-width: 800px; 
@@ -129,25 +143,3 @@ margin-bottom: 30px;
   margin-bottom: 50px;
 }
 `
-export default function Home() {
-  const t = useTranslations("translation.title");
-  const highlight1 = t('highlight1');
-    const middle = t('middle');
-    const highlight2 = t('highlight2');
-   return (
-        <>
-            <Wrapper>
-                <div>
-                    <Title>
-                        <span className="gradient">{highlight1}</span> <span className='middle'>{middle}</span> <span className="gradient">{highlight2}</span>
-                    </Title>
-                    <SubTitle>{t('tittle2')}</SubTitle>
-                </div>
-                <WrapperImage>
-                    <Image src="/images/Garage.webp" alt="Garage" />
-                </WrapperImage>
-            </Wrapper>
-        </>
-
-    )
-}
