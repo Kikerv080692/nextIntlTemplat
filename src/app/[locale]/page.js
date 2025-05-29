@@ -1,7 +1,5 @@
 "use client";
-import AllPage from "@/components/AllPage/AllPage";
 import Brands from "@/components/Brands/Brands";
-import { MainWrapper } from "@/components/Footer/Footer.styled";
 import ServiceList from "@/components/ServiceList/ServiceList";
 import { useTranslations } from "next-intl";
 import styled from "styled-components";
@@ -24,7 +22,6 @@ export default function Home() {
                 </WrapperImage>
                 {/* <ServiceList/> */}
                 <Brands/>
-                <AllPage/>
             </Wrapper>
         
     )

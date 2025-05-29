@@ -7,6 +7,7 @@ import styled from "styled-components";
 import BurgerButton from "./BurgerButton/BurgerButton";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Navigation from "./Navigation/Navigation";
 
 
 export default function Header({ locale, onLocaleChange }) {
@@ -34,16 +35,10 @@ export default function Header({ locale, onLocaleChange }) {
           height={80}
         />
       </LogoWrapper>
-      {!isMobile && <Nav>
-        <Link href={`/${locale}`}>{t("home")}</Link>
-        <Link href={`/${locale}/contact`}>{t("contact")}</Link>
-        <Link href={`/${locale}/about`}>{t("service")}</Link>
-      </Nav>}
-
+      {!isMobile && <Navigation/>}
       <SocialWrapper>
         <SocialComponents />
       </SocialWrapper>
-
       <LangSelect onChange={onLocaleChange} value={locale}>
         <option value="ua">UA</option>
         <option value="ru">Ru</option>
