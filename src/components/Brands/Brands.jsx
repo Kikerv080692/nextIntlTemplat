@@ -39,7 +39,6 @@ export default function Brands() {
                 modules={[Pagination, Navigation]}
             >
                 <SwiperSlide><Image src="/images/logos/bmw-logo.png" width={80} height={80} alt="logo" /></SwiperSlide>
-                <SwiperSlide><Image src="/images/logos/8.png" width={80} height={80} alt="logo" /></SwiperSlide>
                 <SwiperSlide><Image src="/images/logos/5.png" width={80} height={80} alt="logo"/></SwiperSlide>
                 <SwiperSlide><Image src="/images/logos/jeep.png" width={80} height={80}alt="logo" /></SwiperSlide>
                 <SwiperSlide><Image src="/images/logos/nissan-logo.png" width={80} height={80} alt="logo"/></SwiperSlide>
@@ -47,6 +46,7 @@ export default function Brands() {
                 <SwiperSlide><Image src="/images/logos/volkswagen-logo.png" width={80} height={80} alt="logo"/></SwiperSlide>
                 <SwiperSlide><Image src="/images/logos/21.png" width={80} height={80} alt="logo"/></SwiperSlide>
                 <SwiperSlide><Image src="/images/logos/29.png" width={80} height={80}alt="logo" /></SwiperSlide>
+                <SwiperSlide><Image src="/images/logos/8.png" width={50} height={70} alt="logo" /></SwiperSlide>
                 <SwiperSlide><Image src="/images/logos/13.png" width={80} height={80} alt="logo"/></SwiperSlide>
                 <SwiperSlide><Image src="/images/logos/32.png" width={80} height={80} alt="logo"/></SwiperSlide>
                 <SwiperSlide><Image src="/images/logos/15.png" width={80} height={80} alt="logo"/></SwiperSlide>

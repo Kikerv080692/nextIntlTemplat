@@ -23,10 +23,11 @@ export const WrapperFooter = styled.div`
 
   @media(min-width: 768px) {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+     justify-content: space-evenly;
   }
-
+ @media(min-width: 1024px) {
+  justify-content: space-evenly;
+ }
 
 `;
 

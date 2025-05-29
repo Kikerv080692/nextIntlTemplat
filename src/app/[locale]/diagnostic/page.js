@@ -1,12 +1,12 @@
 "use client";
 
 import DiagnosticPage from "@/components/Diagnostic/DiagnosticPage";
-
+import Seo from "@/components/seo";
 
 
 
 
 
 export default function Diagnostic() {
-  return <DiagnosticPage/>;
+  return<><Seo page="diagnostic" /> <DiagnosticPage/></> 
 }

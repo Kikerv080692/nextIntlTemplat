@@ -8,6 +8,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import ButtonPhone from "@/components/ButtonPhone/ButtonPhone";
 import ButtonLocation from "@/components/ButtonLocation/ButtonLocation";
+import LocaleProvider from "@/context/LocaleProvider";
 
 export default function RootLayout({ children, params }) {
   const router = useRouter();
@@ -116,6 +117,7 @@ export default function RootLayout({ children, params }) {
   return (
     <html lang={locale}>
       <body>
+        <LocaleProvider>
         <NextIntlClientProvider
           locale={locale}
           messages={messages}
@@ -127,6 +129,7 @@ export default function RootLayout({ children, params }) {
           <ButtonPhone/>
           <Footer/>
         </NextIntlClientProvider>
+        </LocaleProvider>
       </body>
     </html>
   );

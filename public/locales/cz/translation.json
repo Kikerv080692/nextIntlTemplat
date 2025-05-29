@@ -1,4 +1,23 @@
 {
+  "meta": {
+    "home": {
+      "title": "CarService – Your Trusted Auto Repair Shop",
+      "description": "Expert engine repair, tyre service, and more. Get back on the road safely with CarService."
+    },
+    "about": {
+      "title": "About Us – CarService",
+      "description": "Learn about CarService’s history, values, and commitment to quality automotive care."
+    },
+    "engine": {
+      "title": "Engine Repair – CarService",
+      "description": "Professional engine diagnostics and repair services. Keep your engine running like new."
+    },
+    "tyres": {
+      "title": "Tyre Repair & Replacement – CarService",
+      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
+    }
+  },
+
   "title": {
   "highlight1": "Naše STK vyřeší jakýkoli problém, který nastal s vaším vozem",
   "tittle2": "Servis začínáme během několika hodin po dodání vozidla do servisu. Záruka 24 měsíců."

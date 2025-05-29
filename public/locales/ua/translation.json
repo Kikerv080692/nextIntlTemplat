@@ -1,4 +1,35 @@
 {
+    "meta": {
+    "home": {
+      "title": "Автосервіс Черновіце –Брно автосервіс",
+      "description": "найкращий автосервіс"
+    },
+    "brake": {
+      "title": "About Us – CarService",
+      "description": "Learn about CarService’s history, values, and commitment to quality automotive care."
+    },
+    "engine": {
+      "title": "Engine Repair – CarService",
+      "description": "Professional engine diagnostics and repair services. Keep your engine running like new."
+    },
+    "gassistem": {
+      "title": "Tyre Repair & Replacement – CarService",
+      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
+    },
+    "diagnostic": {
+            "title": "Tyre Repair & Replacement – CarService",
+      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
+    },
+    "electric": {
+            "title": "Tyre Repair & Replacement – CarService",
+      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
+    },
+      "contact": {
+            "title": "Tyre Repair & Replacement – CarService",
+      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
+    }
+},
+  
     "title": {
         "highlight1": "Наше СТО вирішить будь-які проблеми, які виникли з вашим авто",
         "tittle2": "Ми розпочинаємо обслуговування протягом кількох годин після доставки автомобіля в майстерню. Гарантія 24 місяці."
