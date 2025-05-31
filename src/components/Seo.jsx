@@ -9,7 +9,7 @@ export default function Seo({ page }) {
   const { locale } = useClientLocale();
   const t = useTranslations(`translation.meta.${page}`);
 
-  const baseUrl = "https://example.com";
+  const baseUrl = "https://next-intl-templat.vercel.app/";
   const url = `${baseUrl}${locale === "en" ? "" : "/" + locale}${pathname}`;
 
   useEffect(() => {
