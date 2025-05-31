@@ -1,34 +1,34 @@
 {
   "meta": {
-    "home": {
-      "title": "Автосервіс Черновіце –Брно автосервіс",
-      "description": "найкращий автосервіс"
-    },
-    "brake": {
-      "title": "About Us – CarService",
-      "description": "Learn about CarService’s history, values, and commitment to quality automotive care."
-    },
-    "engine": {
-      "title": "Engine Repair – CarService",
-      "description": "Professional engine diagnostics and repair services. Keep your engine running like new."
-    },
-    "gassistem": {
-      "title": "Tyre Repair & Replacement – CarService",
-      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
-    },
-    "diagnostic": {
-      "title": "Tyre Repair & Replacement – CarService",
-      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
-    },
-    "electric": {
-      "title": "Tyre Repair & Replacement – CarService",
-      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
-    },
-    "contact": {
-      "title": "Tyre Repair & Replacement – CarService",
-      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
-    }
+  "home": {
+    "title": "Автосервіс Брно – Ремонт авто, СТО Черновіце | CarService",
+    "description": "Надійний автосервіс у Брно (район Черновіце). Ремонт авто, заміна масла, гальм, шиномонтаж, діагностика. Досвідчені автомеханіки, швидке обслуговування."
   },
+  "brake": {
+    "title": "Ремонт гальм у Брно – Заміна колодок та дисків | CarService",
+    "description": "Професійне обслуговування гальмівної системи: діагностика, заміна гальмівних колодок і дисків. Безпечне водіння починається з надійного гальма."
+  },
+  "engine": {
+    "title": "Ремонт двигуна Брно – Автомеханік Черновіце | CarService",
+    "description": "Ремонт двигуна, комп’ютерна діагностика, усунення несправностей. Обслуговування бензинових і дизельних моторів у Брно."
+  },
+  "gassistem": {
+    "title": "Газобалонне обладнання (ГБО) Брно – Встановлення та ремонт | CarService",
+    "description": "Обслуговування та встановлення ГБО у Брно. Регулювання, ремонт, перевірка витоків, економія пального. Сервіс ГБО будь-якого рівня складності."
+  },
+  "diagnostic": {
+    "title": "Комп’ютерна діагностика авто Брно – Виявлення помилок | CarService",
+    "description": "Швидка комп’ютерна діагностика автомобіля. Читання помилок, аналіз роботи систем, рекомендації щодо ремонту. СТО у Брно."
+  },
+  "electric": {
+    "title": "Автоелектрик Брно – Ремонт електросистем авто | CarService",
+    "description": "Пошук та ремонт електропроблем: акумулятор, стартер, генератор, проводка. Автоелектрик у Черновіцях, Брно."
+  },
+  "contact": {
+    "title": "Контакти СТО Брно – Запис на обслуговування авто | CarService",
+    "description": "Запис на ремонт або діагностику авто в СТО Брно (Черновіце). Адреса, телефон, години роботи. Зв’яжіться з нами зараз!"
+  }
+},
 
   "title": {
     "highlight1": "Наше СТО вирішить будь-які проблеми, які виникли з вашим авто",

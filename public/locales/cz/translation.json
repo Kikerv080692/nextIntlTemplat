@@ -1,34 +1,35 @@
 {
   "meta": {
-    "home": {
-      "title": "Автосервіс Черновіце –Брно автосервіс",
-      "description": "найкращий автосервіс"
-    },
-    "brake": {
-      "title": "About Us – CarService",
-      "description": "Learn about CarService’s history, values, and commitment to quality automotive care."
-    },
-    "engine": {
-      "title": "Engine Repair – CarService",
-      "description": "Professional engine diagnostics and repair services. Keep your engine running like new."
-    },
-    "gassistem": {
-      "title": "Tyre Repair & Replacement – CarService",
-      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
-    },
-    "diagnostic": {
-      "title": "Tyre Repair & Replacement – CarService",
-      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
-    },
-    "electric": {
-      "title": "Tyre Repair & Replacement – CarService",
-      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
-    },
-    "contact": {
-      "title": "Tyre Repair & Replacement – CarService",
-      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
-    }
+  "home": {
+    "title": "Autoservis Brno – Opravy aut, STK Černovice | CarService",
+    "description": "Spolehlivý autoservis v Brně (část Černovice). Opravy aut, výměna oleje, brzd, pneuservis, diagnostika. Zkušení automechanici, rychlý servis."
   },
+  "brake": {
+    "title": "Oprava brzd Brno – Výměna destiček a kotoučů | CarService",
+    "description": "Profesionální servis brzdového systému: diagnostika, výměna brzdových destiček a kotoučů. Bezpečná jízda začíná s funkčními brzdami."
+  },
+  "engine": {
+    "title": "Oprava motoru Brno – Automechanik Černovice | CarService",
+    "description": "Opravy motorů, počítačová diagnostika, odstranění závad. Servis benzinových i dieselových motorů v Brně."
+  },
+  "gassistem": {
+    "title": "Plynové zařízení (LPG) Brno – Montáž a oprava | CarService",
+    "description": "Servis a montáž LPG systémů v Brně. Seřízení, opravy, kontrola úniků, úspora paliva. Servis LPG všech úrovní obtížnosti."
+  },
+  "diagnostic": {
+    "title": "Diagnostika vozidla Brno – Čtení chyb | CarService",
+    "description": "Rychlá počítačová diagnostika auta. Čtení chyb, analýza systémů, doporučení k opravám. Autoservis v Brně."
+  },
+  "electric": {
+    "title": "Autoelektrikář Brno – Oprava elektroinstalace auta | CarService",
+    "description": "Hledání a opravy elektroproblémů: baterie, startér, alternátor, kabeláž. Autoelektrikář v Černovicích, Brno."
+  },
+  "contact": {
+    "title": "Kontakt Autoservis Brno – Objednání opravy auta | CarService",
+    "description": "Objednejte si opravu nebo diagnostiku auta v autoservisu Brno (Černovice). Adresa, telefon, otevírací doba. Kontaktujte nás ještě dnes!"
+  }
+}
+,
 
   "title": {
     "highlight1": "Naše STK vyřeší jakýkoli problém, který nastal s vaším vozem",

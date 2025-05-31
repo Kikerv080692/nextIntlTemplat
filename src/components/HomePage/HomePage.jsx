@@ -108,7 +108,8 @@ export const WrapperImage = styled.div`
 margin: 5px 5px;
 `
 export const Image = styled.img`
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 16px;
 
   @media (min-width: 768px) {
