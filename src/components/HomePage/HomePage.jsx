@@ -3,6 +3,8 @@ import Brands from "@/components/Brands/Brands";
 import ServiceList from "@/components/ServiceList/ServiceList";
 import { useTranslations } from "next-intl";
 import styled from "styled-components";
+import ButtonLocation from "../ButtonLocation/ButtonLocation";
+import ButtonPhone from "../ButtonPhone/ButtonPhone";
 
 export default function HomePage() {
   const t = useTranslations("translation.title");
@@ -20,6 +22,8 @@ export default function HomePage() {
                 <WrapperImage>
                     <Image src="/images/Garage.webp" alt="Garage" />
                 </WrapperImage>
+                <ButtonLocation/>
+                <ButtonPhone/>
                 {/* <ServiceList/> */}
                 <Brands/>
             </Wrapper>
