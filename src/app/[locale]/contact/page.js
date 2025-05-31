@@ -1,13 +1,13 @@
 "use client";
 
 import ContactContent from "@/components/ContactContent";
-import Seo from "@/components/seo";
+import Seo from "@/components/Seo";
 
 export default function Contact() {
   return (
-
-  <>
-  <Seo page="contact" /><ContactContent />;
-  </>
-  )
+    <>
+      <Seo page="contact" />
+      <ContactContent />;
+    </>
+  );
 }

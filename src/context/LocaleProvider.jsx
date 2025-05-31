@@ -1,20 +1,32 @@
-import {  useState } from "react";
-import ThemeContext from "./ThemeContext";
+"use client";
+import { createContext, useContext, useState, useEffect } from "react";
 
+export const LocaleContext = createContext();
 
+export function LocaleProvider({ children, defaultLocale = "cz" }) {
+  const [locale, setLocale] = useState(defaultLocale);
+  const [messages, setMessages] = useState(null);
 
-
-const LocaleProvider = ({ children }) => {
-  const [locale, setLocale] = useState("cz");
-
-  const toggleLocale = (locale) => {
-    setLocale(locale);
-  };
+  useEffect(() => {
+    async function loadMessages() {
+      try {
+        const res = await fetch(`/locales/${locale}/translation.json`);
+        const data = await res.json();
+        setMessages({ translation: data });
+      } catch (e) {
+        console.error("Load failed", e);
+      }
+    }
+    loadMessages();
+  }, [locale]);
 
   return (
-    <ThemeContext.Provider value={{ locale, toggleLocale }}>
+    <LocaleContext.Provider value={{ locale, setLocale, messages }}>
       {children}
-    </ThemeContext.Provider>
+    </LocaleContext.Provider>
   );
-};
-export default LocaleProvider;
+}
+
+export function useClientLocale() {
+  return useContext(LocaleContext);
+}

@@ -1,7 +1,8 @@
 "use client";
 
 import BrakePage from "@/components/Brake/BrakePage";
-import Seo from "@/components/seo";
+import Seo from "@/components/Seo";
+;
 
 
 

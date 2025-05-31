@@ -1,10 +1,10 @@
 {
   "meta": {
     "home": {
-      "title": "CarService – Your Trusted Auto Repair Shop",
-      "description": "Expert engine repair, tyre service, and more. Get back on the road safely with CarService."
+      "title": "Автосервіс Черновіце –Брно автосервіс",
+      "description": "найкращий автосервіс"
     },
-    "about": {
+    "brake": {
       "title": "About Us – CarService",
       "description": "Learn about CarService’s history, values, and commitment to quality automotive care."
     },
@@ -12,21 +12,38 @@
       "title": "Engine Repair – CarService",
       "description": "Professional engine diagnostics and repair services. Keep your engine running like new."
     },
-    "tyres": {
+    "gassistem": {
+      "title": "Tyre Repair & Replacement – CarService",
+      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
+    },
+    "diagnostic": {
+      "title": "Tyre Repair & Replacement – CarService",
+      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
+    },
+    "electric": {
+      "title": "Tyre Repair & Replacement – CarService",
+      "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
+    },
+    "contact": {
       "title": "Tyre Repair & Replacement – CarService",
       "description": "Fast, reliable tyre repair and replacement. Wide selection of tyres for all vehicles."
     }
   },
 
   "title": {
-  "highlight1": "Naše STK vyřeší jakýkoli problém, který nastal s vaším vozem",
-  "tittle2": "Servis začínáme během několika hodin po dodání vozidla do servisu. Záruka 24 měsíců."
-},
-"header": {
-  "home": "Domů",
-  "contact": "Kontakty",
-  "service": "Služby autoservisu"
-},
+    "highlight1": "Naše STK vyřeší jakýkoli problém, který nastal s vaším vozem",
+    "tittle2": "Servis začínáme během několika hodin po dodání vozidla do servisu. Záruka 24 měsíců."
+  },
+  "header": {
+    "home": "Domů",
+    "contact": "Kontakty",
+    "service": "Služby autoservisu",
+    "brake": "Brzdový systém",
+    "diagnostik": "Diagnostika",
+    "electric": "Autoelektrika",
+    "engin": "Motor",
+    "gasSistem": "Výfukový systém"
+  },
   "phone": " Telefonní číslo",
   "send": "Odeslat",
   "phoneText": "Zavoláme vám do 30 minut",
@@ -93,31 +110,31 @@
     "contact": "Kontakty",
     "service": "Služby autoservisu"
   },
-  "footer":{
+  "footer": {
     "hours": "Pracovní doba",
     "days": "Po. - So."
   },
-      "diagnostik":{
-        "title": "Komplexní diagnostika auta",
-        "subtitle": "Kompletní diagnostika vozu před koupí",
-        "text": "Rozhodli jste se koupit ojeté auto, ale nemáte potřebné zkušenosti? Pak se nespoléhejte na své štěstí. Velmi často se totiž stává, že auto koupené na autobazaru nebo přes internet se během 2–3 měsíců provozu změní na... šrot.",
-        "text2": "Proto se nevyplatí šetřit na komplexní diagnostice při koupi ne zcela „nového“ vozu. Odborníci z autoservisu důkladně prověří stav všech částí, komponent a systémů vozidla, abyste měli reálný přehled o jeho technickém stavu.",
-         "li1": "Zkontrolují funkčnost převodovky a podvozku.",
-        "li2": "Prověří stav motoru.",
-        "li3": "Zjistí, nakolik uváděný nájezd kilometrů odpovídá skutečnosti.",
-        "li4": "Prohlédnou karoserii vozu (přítomnost koroze, přelakovaných částí apod.).",
-        "li5": "Provedou diagnostiku elektroinstalace.",
-        "li6": "Zkontrolují stav brzdového systému.",
-        "end": "Na základě získaných informací si potenciální kupující bude moci určit, do jaké míry odpovídá požadovaná cena technickému stavu vozidla."
-},
-"serviceNavigation": {
+  "diagnostik": {
+    "title": "Komplexní diagnostika auta",
+    "subtitle": "Kompletní diagnostika vozu před koupí",
+    "text": "Rozhodli jste se koupit ojeté auto, ale nemáte potřebné zkušenosti? Pak se nespoléhejte na své štěstí. Velmi často se totiž stává, že auto koupené na autobazaru nebo přes internet se během 2–3 měsíců provozu změní na... šrot.",
+    "text2": "Proto se nevyplatí šetřit na komplexní diagnostice při koupi ne zcela „nového“ vozu. Odborníci z autoservisu důkladně prověří stav všech částí, komponent a systémů vozidla, abyste měli reálný přehled o jeho technickém stavu.",
+    "li1": "Zkontrolují funkčnost převodovky a podvozku.",
+    "li2": "Prověří stav motoru.",
+    "li3": "Zjistí, nakolik uváděný nájezd kilometrů odpovídá skutečnosti.",
+    "li4": "Prohlédnou karoserii vozu (přítomnost koroze, přelakovaných částí apod.).",
+    "li5": "Provedou diagnostiku elektroinstalace.",
+    "li6": "Zkontrolují stav brzdového systému.",
+    "end": "Na základě získaných informací si potenciální kupující bude moci určit, do jaké míry odpovídá požadovaná cena technickému stavu vozidla."
+  },
+  "serviceNavigation": {
     "brake": "Brzdový systém",
     "diagnostik": "Diagnostika",
     "electric": "Autoelektrika",
     "engin": "Motor",
     "gasSistem": "Výfukový systém"
-},
-"electricPage": {
+  },
+  "electricPage": {
     "title": "Autoelektrika je systém elektronických komponentů vozidla, který zajišťuje chod motoru, osvětlení, bezpečnostních systémů, komfortu a dalších funkcí. Na správné funkci elektroinstalace závisí startování vozu, stabilní provoz elektrického vybavení a celková bezpečnost jízdy.",
     "subtitle": "Včasná diagnostika autoelektriky umožňuje odhalit a odstranit závady v rané fázi, čímž se předchází nákladným opravám v budoucnu.",
     "textTitle": "V servisu Auto Master provádějí kompletní spektrum prací na autoelektrice:",
@@ -129,61 +146,57 @@
     "text6": "Chip tuning",
     "text7": "Oprava alarmu",
     "text8": "Instalace CarPlay"
-},
-"enginePage" : {
-    "title" : "Diagnostika a oprava motoru",
+  },
+  "enginePage": {
+    "title": "Diagnostika a oprava motoru",
     "subtitle": "Jaké odchylky v chodu vašeho vozidla naznačují nutnost návštěvy autoservisu Auto-Master pro provedení úplné diagnostiky motoru vozidla?",
-    "subtitleText" : "Výrazně se snížil výkon vozidla (zejména patrné na přeplněné dálnici při předjíždění).",
+    "subtitleText": "Výrazně se snížil výkon vozidla (zejména patrné na přeplněné dálnici při předjíždění).",
     "subtitleText1": "Zvýšila se spotřeba benzínu/plynu/nafty.",
     "subtitleText2": "Stále se rozsvěcí kontrolka hladiny oleje, který je třeba dolévat 2–4krát měsíčně.",
     "subtitleText3": "Motor pracuje nestabilně, zhasíná nebo nabírá otáčky bez zjevné příčiny.",
     "subtitleText4": "V oblasti pohonné jednotky se objevil cizí hluk.",
     "subtitleText5": "Z výfukového potrubí vychází hustý kouř (bílý, šedý, někdy i černý).",
     "underSubTitle": "Ale i v případě, že nedokážete problém přesně popsat, pokud vás něco znepokojuje, obraťte se na odborníky. Důležité! Odkládáním drobné (lokální) opravy motoru jen zhoršujete problém!",
-    "title2" : "Nastavení ventilů",
+    "title2": "Nastavení ventilů",
     "subtitle2": "Diagnostika a nastavení tepelných vůlí podle tolerance. Nastavení ventilů v souladu s tolerancemi. Kontrola tepelných vůlí po nastavení. Kvalitní práce s garancí.",
-    "title3" : "KDY A V JAKÝCH PŘÍPADECH JE NUTNÉ NASTAVIT VENTILY",
-    "title3Text" : "Kontrola tepelných vůlí na shodu s normou 0,1-0,4 mm.",
-    "title3Text1" : "Kontrola stavu ventilů na nepoškození a opotřebení",
-    "title3Text2" : "Kontrola netěsností v oblasti krytu ventilů",
-    "title3Text3" : "Nastavení tepelných vůlí ventilů",
-    "title3Text4" : "Výmena všech souvisejících dílů",
-    "title3Text5" : "Doporučení k provozu",
-     "title3Text6" : "Čištění sacího systému, spalovací komory a ventilů pomocí skořápek vlašských ořechů",
+    "title3": "KDY A V JAKÝCH PŘÍPADECH JE NUTNÉ NASTAVIT VENTILY",
+    "title3Text": "Kontrola tepelných vůlí na shodu s normou 0,1-0,4 mm.",
+    "title3Text1": "Kontrola stavu ventilů na nepoškození a opotřebení",
+    "title3Text2": "Kontrola netěsností v oblasti krytu ventilů",
+    "title3Text3": "Nastavení tepelných vůlí ventilů",
+    "title3Text4": "Výmena všech souvisejících dílů",
+    "title3Text5": "Doporučení k provozu",
+    "title3Text6": "Čištění sacího systému, spalovací komory a ventilů pomocí skořápek vlašských ořechů",
     "end": "Nabídka služeb naší společnosti se neomezuje pouze na výše uvedené práce. Naši specialisté vám vždy pomohou vybrat optimální spotřební materiál (olej, chladicí kapalinu atd.), který může výrazně prodloužit životnost motoru vašeho vozu."
-
-},
-"exhaustPage": {
-  "title": "Diagnostika a oprava výfukového systému",
-  "subtitle": "Výfukový systém ovlivňuje nejen hlučnost, ale i účinnost motoru a ekologičnost provozu. Odkládání servisu může vést k vážnému poškození.",
-  "subtitleText": "Zvýšila se hlučnost z výfuku nebo se objevil hučivý zvuk pod vozem.",
-  "subtitleText1": "Výfuk má ostrý zápach nebo změnil barvu (černý, modrý, bílý kouř).",
-  "subtitleText2": "Zaznamenali jste pokles výkonu motoru.",
-  "subtitleText3": "Cítíte zápach výfukových plynů v interiéru.",
-  "subtitleText4": "Únik ve spojích nebo propálený tlumič/rezonátor.",
-  "underSubTitle": "Pokud zaznamenáte některý z příznaků, navštivte náš autoservis. Včasná diagnostika vám ušetří náklady na rozsáhlé opravy.",
-  "title2": "Hlavní úkony na výfukovém systému",
-  "subtitle2": "Provádíme kompletní kontrolu a opravu výfukového systému s použitím kvalitních dílů.",
-  "title3": "Služby zahrnují:",
-  "title3Text": "Diagnostika těsnosti a stavu výfukového systému",
-  "title3Text1": "Výmena nebo oprava tlumiče, rezonátoru, trubek",
-  "title3Text2": "Kontrola a výměna těsnění, objímek, spojů",
-  "title3Text3": "Čištění nebo výměna katalyzátoru / filtru pevných částic",
-  "title3Text4": "Kontrola a oprava uchycení a závěsů",
-  "title3Text5": "Doporučení pro další provoz",
-  "end": "Pravidelný servis výfukového systému zajistí pohodlnou, bezpečnou a úspornou jízdu. Svěřte své auto profesionálům z Auto-Master."
-},
-"contactPage": {
+  },
+  "exhaustPage": {
+    "title": "Diagnostika a oprava výfukového systému",
+    "subtitle": "Výfukový systém ovlivňuje nejen hlučnost, ale i účinnost motoru a ekologičnost provozu. Odkládání servisu může vést k vážnému poškození.",
+    "subtitleText": "Zvýšila se hlučnost z výfuku nebo se objevil hučivý zvuk pod vozem.",
+    "subtitleText1": "Výfuk má ostrý zápach nebo změnil barvu (černý, modrý, bílý kouř).",
+    "subtitleText2": "Zaznamenali jste pokles výkonu motoru.",
+    "subtitleText3": "Cítíte zápach výfukových plynů v interiéru.",
+    "subtitleText4": "Únik ve spojích nebo propálený tlumič/rezonátor.",
+    "underSubTitle": "Pokud zaznamenáte některý z příznaků, navštivte náš autoservis. Včasná diagnostika vám ušetří náklady na rozsáhlé opravy.",
+    "title2": "Hlavní úkony na výfukovém systému",
+    "subtitle2": "Provádíme kompletní kontrolu a opravu výfukového systému s použitím kvalitních dílů.",
+    "title3": "Služby zahrnují:",
+    "title3Text": "Diagnostika těsnosti a stavu výfukového systému",
+    "title3Text1": "Výmena nebo oprava tlumiče, rezonátoru, trubek",
+    "title3Text2": "Kontrola a výměna těsnění, objímek, spojů",
+    "title3Text3": "Čištění nebo výměna katalyzátoru / filtru pevných částic",
+    "title3Text4": "Kontrola a oprava uchycení a závěsů",
+    "title3Text5": "Doporučení pro další provoz",
+    "end": "Pravidelný servis výfukového systému zajistí pohodlnou, bezpečnou a úspornou jízdu. Svěřte své auto profesionálům z Auto-Master."
+  },
+  "contactPage": {
     "title": "Kde nás najdete"
-},
-"AllPage": {
-  "engine": "Motor",
-  "diagnostik": "Diagnostika",
-  "brake": "Brzdový systém",
-  "gasSistem": "Výfukový systém",
-  "electric": "Autoelektrika"
-}
-
-
-
+  },
+  "AllPage": {
+    "engine": "Motor",
+    "diagnostik": "Diagnostika",
+    "brake": "Brzdový systém",
+    "gasSistem": "Výfukový systém",
+    "electric": "Autoelektrika"
+  }
 }

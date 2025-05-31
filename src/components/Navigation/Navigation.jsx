@@ -4,18 +4,21 @@ import styled from "styled-components";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import AllPage from "../AllPage/AllPage";
 import { useState } from "react";
+import { useClientLocale } from "@/context/LocaleProvider";
 
-
-export default function Navigation({ locale, handleCloseMenu }) {
+export default function Navigation({ handleCloseMenu }) {
+  const { locale } = useClientLocale(); 
   const t = useTranslations("translation.header");
   const [isShowService, setIsShowService] = useState(false);
+ 
   const toggleService = () => {
     setIsShowService(prev => !prev);
   };
    const closeServiceMenu = () => {
     setIsShowService(false);
-    handleCloseMenu(); // якщо потрібно ще і основне меню закривати
+   
   };
+
 return (
     <>
       <NavWrapper>

@@ -1,8 +1,12 @@
 "use client";
 
 import ElectricPage from "@/components/Electric/ElectricPage";
-import Seo from "@/components/seo";
+import Seo from "@/components/Seo";
 
 export default function Electric() {
-  return <><Seo page="about" /> <ElectricPage/></>;
+  return (
+    <>
+      <Seo page="electric" /> <ElectricPage />
+    </>
+  );
 }

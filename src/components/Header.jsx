@@ -6,13 +6,16 @@ import SocialComponents from "./SocialComponents/SocialComponents";
 import styled from "styled-components";
 import BurgerButton from "./BurgerButton/BurgerButton";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import Navigation from "./Navigation/Navigation";
+import { useClientLocale } from "@/context/LocaleProvider";
+import { usePathname, useRouter } from "next/navigation";
 
 
-export default function Header({ locale, onLocaleChange }) {
+export default function Header() {
   const t = useTranslations("translation.header");
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
   useEffect(() => {
 
     const handleResize = () => {
@@ -24,7 +27,12 @@ export default function Header({ locale, onLocaleChange }) {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
+  const { locale, setLocale } = useClientLocale();
+  const onLocaleChange = (e) => {
+    const newLocale = e.target.value;
+    setLocale(newLocale);
+    router.replace(`/${newLocale}${pathname.replace(/^\/[a-z]{2}/, "")}`);
+  };
   return (
     <HeaderWrapper>
       <LogoWrapper>

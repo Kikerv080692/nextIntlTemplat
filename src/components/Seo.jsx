@@ -1,38 +1,30 @@
-// File 1: /src/Seo.js
-
 "use client";
-
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
+import { useClientLocale } from "@/context/LocaleProvider";
 
 export default function Seo({ page }) {
   const pathname = usePathname();
-  const locale = useLocale();
+  const { locale } = useClientLocale();
   const t = useTranslations(`translation.meta.${page}`);
 
-  const baseUrl = "https://localhost:3000"; 
-  const url = `${baseUrl}/${locale}/${pathname}`;
-console.log("8888",pathname)
+  const baseUrl = "https://example.com";
+  const url = `${baseUrl}${locale === "en" ? "" : "/" + locale}${pathname}`;
 
   useEffect(() => {
-    // Мета-теги
     setMeta("description", t("description"));
     setMeta("robots", "index, follow");
 
-    // Open Graph
     setPropertyMeta("og:title", t("title"));
     setPropertyMeta("og:description", t("description"));
     setPropertyMeta("og:type", "website");
     setPropertyMeta("og:url", url);
 
-    // Канонічне посилання
     setLink("canonical", url);
-
-    // Альтернативні hreflang для en/fr
     setLink("alternate", `${baseUrl}/cz${pathname}`, "cz");
     setLink("alternate", `${baseUrl}/ua${pathname}`, "ua");
-    setLink("alternate", `${baseUrl}/ru${pathname}`, "ru");
+    setLink("alternate", `${baseUrl}/ru${pathname}`, "ua");
   }, [t, pathname, locale]);
 
   return null;

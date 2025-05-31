@@ -1,134 +1,33 @@
 "use client";
 
-import { NextIntlClientProvider } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import Header from "../components/Header";
 import "./globals.css";
+import { LocaleProvider, useClientLocale } from "@/context/LocaleProvider";
+import { NextIntlClientProvider } from "next-intl";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer/Footer";
-import ButtonPhone from "@/components/ButtonPhone/ButtonPhone";
-import ButtonLocation from "@/components/ButtonLocation/ButtonLocation";
-import LocaleProvider from "@/context/LocaleProvider";
 
-export default function RootLayout({ children, params }) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const [messages, setMessages] = useState(null);
-  const [locale, setLocale] = useState(params?.locale || "cz");
+function InnerLayout({ children }) {
+  const { locale, messages } = useClientLocale();
 
-  // Fallback messages in case JSON files fail to load
-  const fallbackMessages = {
-    en: {
-      translation: {
-        welcome: "Welcome to my app",
-        greeting: "Hello, {name}!",
-        about: {
-          title: "About Us",
-          description:
-            "We are a team dedicated to building awesome web applications.",
-        },
-        contact: {
-          title: "Contact Us",
-          description: "Get in touch with us for any inquiries.",
-        },
-        header: {
-          home: "Home",
-          about: "About",
-          contact: "Contact",
-        },
-      },
-    },
-    fr: {
-      translation: {
-        welcome: "Bienvenue sur mon application",
-        greeting: "Bonjour, {name}!",
-        about: {
-          title: "À propos de nous",
-          description:
-            "Nous sommes une équipe dédiée à la création d'applications web exceptionnelles.",
-        },
-        contact: {
-          title: "Contactez-nous",
-          description: "Contactez-nous pour toute question.",
-        },
-        header: {
-          home: "Accueil",
-          about: "À propos",
-          contact: "Contact",
-        },
-      },
-    },
-  };
-
-  // Sync locale with pathname
-  useEffect(() => {
-    const currentLocale = pathname.split("/")[1] || "cz";
-    if (currentLocale !== locale && ["ua", "cz","ru"].includes(currentLocale)) {
-      console.log("Setting locale to:", currentLocale);
-      setLocale(currentLocale);
-    }
-  }, [pathname, locale]);
-
-  // Load translations via fetch
-  useEffect(() => {
-    async function loadMessages() {
-      try {
-        console.log("Fetching translations for locale:", locale);
-        const response = await fetch(`/locales/${locale}/translation.json`);
-        if (!response.ok) throw new Error("Failed to fetch translations");
-        const loadedMessages = await response.json();
-        setMessages({ translation: loadedMessages });
-        console.log("Loaded messages:", loadedMessages);
-      } catch (error) {
-        console.error(`Failed to load translations for ${locale}:`, error);
-        setMessages(fallbackMessages[locale] || fallbackMessages.cz);
-        console.log(
-          "Using fallback messages:",
-          fallbackMessages[locale] || fallbackMessages.cz
-        );
-      }
-    }
-    loadMessages();
-  }, [locale]);
-
-  // Handle locale change
-  const handleLocaleChange = (event) => {
-    const newLocale = event.target.value;
-    console.log("Navigating to locale:", newLocale);
-    try {
-      setLocale(newLocale);
-      router.replace(`/${newLocale}`);
-    } catch (error) {
-      console.error("Failed to navigate to new locale:", error);
-    }
-  };
-
-  // Wait for translations to load
-  if (!messages) {
-    return (
-      <html lang={locale}>
-        <body>
-          <div>Loading...</div>
-        </body>
-      </html>
-    );
-  }
+  if (!messages) return <div>Loading...</div>;
 
   return (
-    <html lang={locale}>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </NextIntlClientProvider>
+  );
+}
+
+export default function RootLayout({ children, params }) {
+  const defaultLocale = params?.locale || "cz";
+
+  return (
+    <html lang={defaultLocale}>
       <body>
-        <LocaleProvider>
-        <NextIntlClientProvider
-          locale={locale}
-          messages={messages}
-          timeZone="UTC"
-        >
-          <Header locale={locale} onLocaleChange={handleLocaleChange} />
-          <main>{children}</main>
-          <ButtonLocation/>
-          <ButtonPhone/>
-          <Footer/>
-        </NextIntlClientProvider>
+        <LocaleProvider defaultLocale={defaultLocale}>
+          <InnerLayout>{children}</InnerLayout>
         </LocaleProvider>
       </body>
     </html>
