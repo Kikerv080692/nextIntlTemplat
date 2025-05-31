@@ -1,0 +1,35 @@
+{
+  "welcome": "Bienvenue sur mon application",
+  "greeting": "Bonjour, {name}!",
+  "about": {
+    "title": "À propos de nous",
+    "description": "Nous sommes une équipe dédiée à la création d'applications web exceptionnelles."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Contactez-nous pour toute question."
+  },
+  "header": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "meta": {
+    "home": {
+      "title": "CarService – Votre Atelier de Réparation Auto",
+      "description": "Réparation moteur, pneus et plus. Repartez en toute sécurité avec CarService."
+    },
+    "about": {
+      "title": "À Propos – CarService",
+      "description": "Découvrez l’histoire, les valeurs et l’engagement qualité de CarService."
+    },
+    "engine": {
+      "title": "Réparation Moteur – CarService",
+      "description": "Diagnostic et réparation moteur professionnels. Gardez votre moteur comme neuf."
+    },
+    "tyres": {
+      "title": "Réparation & Remplacement de Pneus – CarService",
+      "description": "Réparation et remplacement de pneus rapides et fiables. Large choix de pneus pour tous véhicules."
+    }
+  }
+}
