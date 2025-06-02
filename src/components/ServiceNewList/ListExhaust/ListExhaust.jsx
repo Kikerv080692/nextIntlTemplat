@@ -1,26 +1,40 @@
+
+
 import styled from "styled-components";
 import { FaChevronDown } from "react-icons/fa";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 
+export default function ListExhaust({}) {
+    const t = useTranslations("translation.exhaust");
+   const [isOpen, setIsOpen] = useState(false);
+  const toggleAccordion = () => setIsOpen((prev) => !prev);
 
-
-export default function ServiceListItem({ children, title, img, handleClick, isOpen }) {
     return (
         <WrapperItem>
-            <Item onClick={handleClick}>
+            <Item onClick={toggleAccordion}>
                 <WrapperIMGTitle>
                     <div>
-                    <img src={img} alt="3" />
+                        <img src="/images/serviceList/diagnostic.jpg" alt="exhaust" />
                     </div>
-                    <h2>{title}</h2>
-                      <Icon $isopen={isOpen}> 
+                    <h2>{t("title")}</h2>
+                    <Icon $isopen={isOpen}>
                         <FaChevronDown />
                     </Icon>
                 </WrapperIMGTitle>
-                {isOpen && <p>{children}</p>}
+                {isOpen && (
+                    <>
+                        <p>{t("muffler")}</p>
+                        <p>{t("flex")}</p>
+                        <p>{t("lambda")}</p>
+                        <p>{t("catalyst")}</p>
+                        <p>{t("catalyst")}</p>
+                        <p>{t("dpf")}</p>
+                    </>
+                )}
             </Item>
         </WrapperItem>
-
     )
 }
 

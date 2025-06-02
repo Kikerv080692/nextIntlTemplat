@@ -6,7 +6,7 @@ import AllPage from "../AllPage/AllPage";
 import { useState } from "react";
 import { useClientLocale } from "@/context/LocaleProvider";
 
-export default function Navigation({ handleCloseMenu }) {
+export default function Navigation({ handleCloseMenu, handleShowMenu }) {
   const { locale } = useClientLocale(); 
   const t = useTranslations("translation.header");
   const [isShowService, setIsShowService] = useState(false);
@@ -38,7 +38,7 @@ return (
 
       {isShowService && (
         <ServiceDropdown>
-          <AllPage locale={locale} onLinkClick={closeServiceMenu} />
+          <AllPage locale={locale} onLinkClick={handleShowMenu} />
         </ServiceDropdown>
       )}
     </>

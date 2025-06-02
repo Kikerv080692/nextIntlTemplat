@@ -25,6 +25,18 @@ export default function Seo({ page }) {
     setLink("alternate", `${baseUrl}/cz${pathname}`, "cz");
     setLink("alternate", `${baseUrl}/ua${pathname}`, "ua");
     setLink("alternate", `${baseUrl}/ru${pathname}`, "ua");
+
+    setIcon(
+      "apple-touch-icon",
+      "/favicon/apple-icon.png",
+      "image/png",
+      "180x180"
+    ); // iOS icon
+    setIcon("icon", "/favicon/icon1.png", "image/png", "32x32"); // default favicon
+    setIcon("icon", "/favicon/icon0.svg", "image/svg+xml"); // scalable favicon
+    setIcon("shortcut icon", "/favicon/favicon.ico"); // fallback favicon
+    setManifest("/favicon/manifest.json"); // PWA manifest
+
   }, [t, pathname, locale]);
 
   return null;
@@ -59,6 +71,28 @@ function setLink(rel, href, hreflang) {
     link = document.createElement("link");
     link.setAttribute("rel", rel);
     if (hreflang) link.setAttribute("hreflang", hreflang);
+    document.head.appendChild(link);
+  }
+  link.setAttribute("href", href);
+}
+
+function setIcon(rel, href, type, sizes) {
+  const selector = `link[rel="${rel}"]${sizes ? `[sizes="${sizes}"]` : ""}`;
+  let link = document.querySelector(selector);
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", rel);
+    document.head.appendChild(link);
+  }
+  link.setAttribute("href", href);
+  if (type) link.setAttribute("type", type);
+  if (sizes) link.setAttribute("sizes", sizes);
+}
+function setManifest(href) {
+  let link = document.querySelector(`link[rel="manifest"]`);
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", "manifest");
     document.head.appendChild(link);
   }
   link.setAttribute("href", href);

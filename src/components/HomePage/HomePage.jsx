@@ -1,10 +1,15 @@
 "use client";
 import Brands from "@/components/Brands/Brands";
-import ServiceList from "@/components/ServiceList/ServiceList";
+
 import { useTranslations } from "next-intl";
 import styled from "styled-components";
 import ButtonLocation from "../ButtonLocation/ButtonLocation";
 import ButtonPhone from "../ButtonPhone/ButtonPhone";
+import ListEngine from "../ServiceNewList/ListEngine/ListEngine";
+import ListElectric from "../ServiceNewList/ListElectric/ListElectric";
+import ListExhaust from "../ServiceNewList/ListExhaust/ListExhaust";
+import ListMaintenance from "../ServiceNewList/ListMaintenance/ListMaintenance";
+import ListChassis from "../ServiceNewList/ListChassis/ListChassis";
 
 export default function HomePage() {
   const t = useTranslations("translation.title");
@@ -24,7 +29,11 @@ export default function HomePage() {
                 </WrapperImage>
                 <ButtonLocation/>
                 <ButtonPhone/>
-                {/* <ServiceList/> */}
+                <ListEngine/>
+                <ListElectric/>
+                <ListExhaust/>
+                <ListMaintenance/>
+                <ListChassis/>
                 <Brands/>
             </Wrapper>
         
