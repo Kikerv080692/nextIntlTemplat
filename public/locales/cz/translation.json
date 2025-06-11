@@ -1,31 +1,31 @@
 {
   "meta": {
   "home": {
-    "title": "Autoservis Brno – Opravy aut, STK Černovice | CarService",
+    "title": "Autoservis Brno – Opravy aut, STK Černovice | AutoMaster",
     "description": "Spolehlivý autoservis v Brně (část Černovice). Opravy aut, výměna oleje, brzd, pneuservis, diagnostika. Zkušení automechanici, rychlý servis."
   },
   "brake": {
-    "title": "Oprava brzd Brno – Výměna destiček a kotoučů | CarService",
+    "title": "Oprava brzd Brno – Výměna destiček a kotoučů | AutoMaster",
     "description": "Profesionální servis brzdového systému: diagnostika, výměna brzdových destiček a kotoučů. Bezpečná jízda začíná s funkčními brzdami."
   },
   "engine": {
-    "title": "Oprava motoru Brno – Automechanik Černovice | CarService",
+    "title": "Oprava motoru Brno – Automechanik Černovice | AutoMaster",
     "description": "Opravy motorů, počítačová diagnostika, odstranění závad. Servis benzinových i dieselových motorů v Brně."
   },
   "gassistem": {
-    "title": "Plynové zařízení (LPG) Brno – Montáž a oprava | CarService",
+    "title": "Plynové zařízení (LPG) Brno – Montáž a oprava | AutoMaster",
     "description": "Servis a montáž LPG systémů v Brně. Seřízení, opravy, kontrola úniků, úspora paliva. Servis LPG všech úrovní obtížnosti."
   },
   "diagnostic": {
-    "title": "Diagnostika vozidla Brno – Čtení chyb | CarService",
+    "title": "Diagnostika vozidla Brno – Čtení chyb | AutoMaster",
     "description": "Rychlá počítačová diagnostika auta. Čtení chyb, analýza systémů, doporučení k opravám. Autoservis v Brně."
   },
   "electric": {
-    "title": "Autoelektrikář Brno – Oprava elektroinstalace auta | CarService",
+    "title": "Autoelektrikář Brno – Oprava elektroinstalace auta | AutoMaster",
     "description": "Hledání a opravy elektroproblémů: baterie, startér, alternátor, kabeláž. Autoelektrikář v Černovicích, Brno."
   },
   "contact": {
-    "title": "Kontakt Autoservis Brno – Objednání opravy auta | CarService",
+    "title": "Kontakt Autoservis Brno – Objednání opravy auta | AutoMaster",
     "description": "Objednejte si opravu nebo diagnostiku auta v autoservisu Brno (Černovice). Adresa, telefon, otevírací doba. Kontaktujte nás ještě dnes!"
   }
 }
