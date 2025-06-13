@@ -14,7 +14,7 @@ export default function Footer() {
                 <img src="/images/footer/clock.png" alt="clock" />
                 <div>
                     <h4>{t('footer.hours')}</h4>
-                    <p>{t("footer.days")} <span>8:00 - 20:00</span></p>
+                    <p>{t("footer.days")} <span>8:00 - 19:00</span></p>
                 </div>
             </SC.InfoSection>
             <SC.ContactSection>
